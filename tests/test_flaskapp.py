@@ -19,9 +19,9 @@ class FlaskTestCase(unittest.TestCase):
         self.assertEqual(resp['answer'],35,'Multiply endpoint failed known answer 7*5 = 35')
 
     def test_upper_case(self):
-        response = self.app.get('/touppercase?s=workinNg')
+        response = self.app.get('/touppercase?s=workiNg')
         resp = response.data.decode()
-        self.assertEqual(resp, "WORKING", "touppercase endpoint failed known answer 'AINTWORKING'")
+        self.assertEqual(resp, "WORKING", "touppercase endpoint failed known answer 'WORKING'")
 
     # TODO DEFINE TWO MORE TESTS ON THE END POINTS
 
