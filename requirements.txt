@@ -2,5 +2,4 @@ Flask
 Flask-BasicAuth
 codecov
 pylint
-pytest
-pyttest
+pytest == 4.3.1
